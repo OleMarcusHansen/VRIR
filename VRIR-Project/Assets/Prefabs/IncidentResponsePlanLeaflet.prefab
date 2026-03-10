@@ -199,35 +199,40 @@ MonoBehaviour:
   m_text: 'Incident Response Plan
 
 
-    If any yellow or red warnings appear, perform
-    the following steps:
+    Monitor the system closely. If any yellow
+    or red warnings appear, perform the following actions:
+
 
     1. Change Config
 
-    2. Notify Leaders
+    2.
+    Notify Leaders
 
-    3. Enforce
-    2FA
+    3. Enforce 2FA
 
     4. Reset Passwords
 
-    5. Log Out All Users
+    5. Log Out All
+    Users
+
 
     6. Run System Analysis
 
-    7.
-    Save System State
+    7. Save System State
 
-    8. Run Malware Remover
+    8. Run Malware
+    Remover
+
 
     9. Prepare Backup
 
-    10.
-    Save Log Output
+    10. Save Log Output
 
     11. Revert to Backup
 
-    12. Document Incident'
+
+    12.
+    Document Incident'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
