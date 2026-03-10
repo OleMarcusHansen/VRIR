@@ -1,16 +1,21 @@
+using System.Collections;
 using UnityEngine;
 
 public class LogOutput : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] GameObject introScreen;
+    [SerializeField] GameObject logOutputScreen;
+
+    public bool yellowWarnings;
+    public bool redWarnings;
+
+    public void StartOutput()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator OutputLog()
     {
-        
+        yield return null;
     }
 }
