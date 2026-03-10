@@ -18,6 +18,11 @@ public class Task : MonoBehaviour
 
     public void CompleteTask()
     {
+        if (completed && !repeatable)
+        {
+            return;
+        }
+
         completed = true;
         ScenarioManager.instance.scenarioExecutionFlowPerformed.Add(taskName);
     }
