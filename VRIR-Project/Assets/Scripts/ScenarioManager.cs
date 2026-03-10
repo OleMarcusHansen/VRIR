@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ScenarioManager : MonoBehaviour
 {
+    public bool ScenarioStarted;
+
     [SerializeField] string[] scenarioExecutionFlowCorrect;
     public List<string> scenarioExecutionFlowPerformed = new List<string>();
 
@@ -25,6 +27,11 @@ public class ScenarioManager : MonoBehaviour
 
     IEnumerator StartScenario()
     {
+        if (ScenarioStarted)
+        {
+            yield break;
+        }
+
         // start normal log output
 
         yield return secondsUntilYellowWarnings;
