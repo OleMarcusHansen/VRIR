@@ -6,12 +6,6 @@ using Unity.XR.CoreUtils;
 
 public class LogOutput : MonoBehaviour
 {
-    [SerializeField] GameObject introScreen;
-    [SerializeField] GameObject logOutputScreen;
-
-    [SerializeField] TextMeshPro logText;
-    List<string> logStrings = new List<string>();
-
     [SerializeField] TextMeshProUGUI[] texts;
     int textIndex = 0;
 
