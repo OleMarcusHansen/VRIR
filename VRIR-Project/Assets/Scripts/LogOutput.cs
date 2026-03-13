@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using Unity.XR.CoreUtils;
 
 public class LogOutput : MonoBehaviour
 {
@@ -36,7 +35,7 @@ public class LogOutput : MonoBehaviour
 
         while (outputLog)
         {
-            yield return new WaitForSeconds(Random.Range(0.2f, 1.2f));
+            yield return new WaitForSeconds(Random.Range(0.1f, 1.0f));
 
             //logStrings.RemoveAt(0);
             AddRandomString();
@@ -53,17 +52,17 @@ public class LogOutput : MonoBehaviour
 
         if (redWarnings && Random.value > 0.6)
         {
-            texts[textIndex].text = redStrings[Random.Range(0, yellowStrings.Count - 1)];
+            texts[textIndex].text = redStrings[Random.Range(0, yellowStrings.Count)];
             texts[textIndex].color = Color.red;
         }
         else if (yellowWarnings && Random.value > 0.6)
         {
-            texts[textIndex].text = yellowStrings[Random.Range(0, yellowStrings.Count - 1)];
+            texts[textIndex].text = yellowStrings[Random.Range(0, yellowStrings.Count)];
             texts[textIndex].color = Color.yellow;
         }
         else
         {
-            texts[textIndex].text = normalStrings[Random.Range(0, normalStrings.Count - 1)];
+            texts[textIndex].text = normalStrings[Random.Range(0, normalStrings.Count)];
             texts[textIndex].color = Color.white;
         }
 
@@ -76,11 +75,11 @@ public class LogOutput : MonoBehaviour
         /*
         if (yellowWarnings && Random.value > 0.5)
         {
-            logStrings.Add(yellowStrings[Random.Range(0, yellowStrings.Count - 1)]);
+            logStrings.Add(yellowStrings[Random.Range(0, yellowStrings.Count)]);
             return;
         }
 
-        logStrings.Add(normalStrings[Random.Range(0, normalStrings.Count - 1)]);
+        logStrings.Add(normalStrings[Random.Range(0, normalStrings.Count)]);
         */
     }
 }
