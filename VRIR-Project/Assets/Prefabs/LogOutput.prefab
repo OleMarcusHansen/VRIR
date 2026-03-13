@@ -984,13 +984,16 @@ MonoBehaviour:
   - The system performed a normal action
   - Database was accessed correctly
   - User performed a normal action
+  - Normal system operation
   yellowStrings:
   - Login attempt repeatedly failed
   - Critical action attempt detected
+  - Unusual system operation
   redStrings:
   - Critical action performed
   - 'Database manually altered '
   - Database manually accessed
+  - Malware detected
   outputLog: 1
   yellowWarnings: 0
   redWarnings: 0

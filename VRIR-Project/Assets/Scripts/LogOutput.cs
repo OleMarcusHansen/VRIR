@@ -54,11 +54,15 @@ public class LogOutput : MonoBehaviour
         {
             texts[textIndex].text = redStrings[Random.Range(0, yellowStrings.Count)];
             texts[textIndex].color = Color.red;
+
+            // trigger alarm light
         }
         else if (yellowWarnings && Random.value > 0.6)
         {
             texts[textIndex].text = yellowStrings[Random.Range(0, yellowStrings.Count)];
             texts[textIndex].color = Color.yellow;
+
+            // trigger alarm light
         }
         else
         {
