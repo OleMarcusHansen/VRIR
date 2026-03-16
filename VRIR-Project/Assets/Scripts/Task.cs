@@ -1,10 +1,13 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Task : MonoBehaviour
 {
     public string taskName;
     public bool completed;
     public bool repeatable;
+
+    public UnityEvent onTaskPerformed;
 
     void Start()
     {
@@ -25,5 +28,6 @@ public class Task : MonoBehaviour
 
         completed = true;
         ScenarioManager.instance.scenarioExecutionFlowPerformed.Add(taskName);
+        onTaskPerformed.Invoke();
     }
 }

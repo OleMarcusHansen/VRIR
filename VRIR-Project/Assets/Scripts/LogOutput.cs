@@ -46,6 +46,19 @@ public class LogOutput : MonoBehaviour
 
     }
 
+    public void AddString(string s)
+    {
+        texts[textIndex].transform.SetSiblingIndex(texts.Length - 1);
+
+        texts[textIndex].text = s;
+        texts[textIndex].color = Color.white;
+
+        textIndex++;
+        if (textIndex >= texts.Length){
+            textIndex = 0;
+        }
+    }
+
     void AddRandomString()
     {
         texts[textIndex].transform.SetSiblingIndex(texts.Length - 1);
