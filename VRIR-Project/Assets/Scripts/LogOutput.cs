@@ -12,21 +12,22 @@ public class LogOutput : MonoBehaviour
     [SerializeField] List<string> yellowStrings = new List<string>();
     [SerializeField] List<string> redStrings = new List<string>();
 
-    public bool outputLog = true;
+    bool outputLog = true;
     public bool yellowWarnings;
     public bool redWarnings;
 
     private void Start()
     {
         texts = GetComponentsInChildren<TextMeshProUGUI>();
-
-        StartOutput();
     }
 
     public void StartOutput()
     {
-
         StartCoroutine("OutputLog");
+    }
+    public void EndOutput()
+    {
+        outputLog = false;
     }
 
     IEnumerator OutputLog()

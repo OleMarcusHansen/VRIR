@@ -7,13 +7,16 @@ public class ScenarioManager : MonoBehaviour
     public bool ScenarioStarted;
 
     [SerializeField] string[] scenarioExecutionFlowCorrect;
-    public List<string> scenarioExecutionFlowPerformed = new List<string>();
+    [SerializeField] List<string> scenarioExecutionFlowPerformed = new List<string>();
 
     [SerializeField] int secondsUntilYellowWarnings;
     [SerializeField] int secondsUntilRedWarnings;
 
+    [SerializeField] LogOutput logOutput;
+    [SerializeField] GameObject startScreen;
+
     public static ScenarioManager instance;
-    void Start()
+    void Awake()
     {
         if (instance == null)
         {
@@ -25,7 +28,17 @@ public class ScenarioManager : MonoBehaviour
         }
     }
 
-    IEnumerator StartScenario()
+    public void AddPerformedTask(string taskName)
+    {
+        scenarioExecutionFlowPerformed.Add(taskName);
+    }
+
+    public void StartScenario()
+    {
+        StartCoroutine("Scenario");
+    }
+
+    IEnumerator Scenario()
     {
         if (ScenarioStarted)
         {
@@ -33,19 +46,23 @@ public class ScenarioManager : MonoBehaviour
         }
 
         // start normal log output
+        logOutput.gameObject.SetActive(true);
+        logOutput.StartOutput();
 
-        yield return secondsUntilYellowWarnings;
+        yield return new WaitForSeconds(secondsUntilYellowWarnings);
 
         // start yellow warning output
+        logOutput.yellowWarnings = true;
 
-        yield return secondsUntilRedWarnings;
+        yield return new WaitForSeconds(secondsUntilRedWarnings);
 
         // start red warning output
+        logOutput.redWarnings = true;
     }
 
     public void EndScenario()
     {
-        // stop enumerator
+        logOutput.EndOutput();
 
         // calculate and show score and feedback
 

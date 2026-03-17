@@ -27,7 +27,7 @@ public class Task : MonoBehaviour
         }
 
         completed = true;
-        ScenarioManager.instance.scenarioExecutionFlowPerformed.Add(taskName);
         onTaskPerformed.Invoke();
+        ScenarioManager.instance.AddPerformedTask(taskName);
     }
 }

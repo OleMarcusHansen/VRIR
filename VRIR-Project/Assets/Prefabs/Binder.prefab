@@ -283,6 +283,7 @@ GameObject:
   - component: {fileID: 1576382449814820972}
   - component: {fileID: 5885641484884431324}
   - component: {fileID: 1346376833773732284}
+  - component: {fileID: 9145182535773050502}
   m_Layer: 0
   m_Name: Binder
   m_TagString: Untagged
@@ -509,6 +510,24 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
+--- !u!114 &9145182535773050502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7370114060026462869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a947d40b40885584c97a2a25138d827f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Task
+  taskName: 
+  completed: 0
+  repeatable: 1
+  onTaskPerformed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &6374671139202448643
 PrefabInstance:
   m_ObjectHideFlags: 0
