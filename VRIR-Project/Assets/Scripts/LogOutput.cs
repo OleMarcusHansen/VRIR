@@ -30,19 +30,24 @@ public class LogOutput : MonoBehaviour
         outputLog = false;
     }
 
+    public void StopYellowWarnings()
+    {
+        yellowWarnings = false;
+    }
+    public void StopRedWarnings()
+    {
+        redWarnings = false;
+    }
+
     IEnumerator OutputLog()
     {
         yield return null;
 
         while (outputLog)
         {
-            yield return new WaitForSeconds(Random.Range(0.1f, 1.0f));
+            yield return new WaitForSeconds(Random.Range(0.5f, 1.5f));
 
-            //logStrings.RemoveAt(0);
             AddRandomString();
-
-            //print(string.Join("\n", logStrings));
-            //logText.text = string.Join("\n", logStrings);
         }
 
     }
@@ -52,7 +57,7 @@ public class LogOutput : MonoBehaviour
         texts[textIndex].transform.SetSiblingIndex(texts.Length - 1);
 
         texts[textIndex].text = s;
-        texts[textIndex].color = Color.white;
+        texts[textIndex].color = Color.green;
 
         textIndex++;
         if (textIndex >= texts.Length){
@@ -84,20 +89,9 @@ public class LogOutput : MonoBehaviour
             texts[textIndex].color = Color.white;
         }
 
-
         textIndex++;
         if (textIndex >= texts.Length){
             textIndex = 0;
         }
-
-        /*
-        if (yellowWarnings && Random.value > 0.5)
-        {
-            logStrings.Add(yellowStrings[Random.Range(0, yellowStrings.Count)]);
-            return;
-        }
-
-        logStrings.Add(normalStrings[Random.Range(0, normalStrings.Count)]);
-        */
     }
 }

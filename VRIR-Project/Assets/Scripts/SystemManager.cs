@@ -7,4 +7,9 @@ public class SystemManager : MonoBehaviour
     {
         selectEnterEventArgs.interactableObject.transform.GetComponent<Task>().CompleteTask();
     }
+
+    public void TestPrint()
+    {
+        Debug.Log("Test");
+    }
 }
