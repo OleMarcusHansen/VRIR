@@ -54,6 +54,7 @@ public class ScenarioManager : MonoBehaviour
 
         // start normal log output
         logOutput.gameObject.SetActive(true);
+        startScreen.gameObject.SetActive(false);
         logOutput.StartOutput();
 
         yield return new WaitForSeconds(secondsUntilYellowWarnings);
