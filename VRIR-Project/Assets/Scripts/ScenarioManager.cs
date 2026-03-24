@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScenarioManager : MonoBehaviour
 {
-    public bool ScenarioStarted;
+    public bool scenarioStarted;
 
     [SerializeField] string[] scenarioExecutionFlowCorrect;
     [SerializeField] List<string> scenarioExecutionFlowPerformed = new List<string>();
@@ -35,12 +35,19 @@ public class ScenarioManager : MonoBehaviour
 
     public void StartScenario()
     {
+        if (scenarioStarted)
+        {
+            return;
+        }
+
         StartCoroutine("Scenario");
+
+        scenarioStarted = true;
     }
 
     IEnumerator Scenario()
     {
-        if (ScenarioStarted)
+        if (scenarioStarted)
         {
             yield break;
         }
