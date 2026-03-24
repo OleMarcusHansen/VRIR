@@ -18,8 +18,8 @@ public class MenuManager : MonoBehaviour
 
     void Start()
     {
-        ToggleMainMenu(true);
-        ToggleControllers(false);
+        //ToggleMainMenu(true);
+        //ToggleControllers(false);
     }
 
     public void ToggleMainMenu(bool b)
