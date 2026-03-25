@@ -5703,11 +5703,72 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2179204704113740547, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179204704113740547, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179204704113740547, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8602580663821257059}
+    - target: {fileID: 2179204704113740547, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179204704113740547, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartPrintLog
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179204704113740547, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Printer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179204704113740547, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Task, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
+      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
+      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
+      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8602580663821257059}
+    - target: {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
+      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
+      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StartPrintLog
+      objectReference: {fileID: 0}
+    - target: {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
+      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Printer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
+      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Log saved and printed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
+      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7721142110820558841, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
       propertyPath: m_Name
       value: LogOutputScreen
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6315,6 +6376,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7782751424165605051, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7782751424165605051, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 817372469}
+    - target: {fileID: -7782751424165605051, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AddString
+      objectReference: {fileID: 0}
     - target: {fileID: 1133978342049609581, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
       propertyPath: m_Name
       value: Printer
@@ -6359,11 +6432,93 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7843421890095666079, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: logPrefab
+      value: 
+      objectReference: {fileID: 4726792859657974689, guid: 6292d26e06fde644cbd43891b15e2783, type: 3}
+    - target: {fileID: 7843421890095666079, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onPrint.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843421890095666079, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onPrintFinished.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843421890095666079, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onPrint.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843421890095666079, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onPrint.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8602580663821257060}
+    - target: {fileID: 7843421890095666079, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onPrint.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843421890095666079, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onPrint.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CompleteTask
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843421890095666079, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onPrintFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843421890095666079, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onPrintFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8602580663821257060}
+    - target: {fileID: 7843421890095666079, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onPrintFinished.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843421890095666079, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onPrintFinished.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CompleteTask
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843421890095666079, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onPrint.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Task, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843421890095666079, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onPrintFinished.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Task, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843421890095666079, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onPrint.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7843421890095666079, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: onPrintFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+--- !u!114 &8602580663821257059 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7843421890095666079, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+  m_PrefabInstance: {fileID: 8602580663821257058}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3caa3f03c73f3514094a1b5f48460a6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Printer
+--- !u!114 &8602580663821257060 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -7782751424165605051, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+  m_PrefabInstance: {fileID: 8602580663821257058}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a947d40b40885584c97a2a25138d827f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Task
 --- !u!1 &8732889381603087552 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 478399024160067638, guid: ca52b070175af0a4ba5fdc02e922ba82, type: 3}
