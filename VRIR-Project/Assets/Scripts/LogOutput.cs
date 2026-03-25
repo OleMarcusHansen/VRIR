@@ -55,6 +55,11 @@ public class LogOutput : MonoBehaviour
 
     public void AddString(string s)
     {
+        if (!gameObject.activeInHierarchy)
+        {
+            return;
+        }
+
         texts[textIndex].transform.SetSiblingIndex(texts.Length - 1);
 
         texts[textIndex].text = s;
