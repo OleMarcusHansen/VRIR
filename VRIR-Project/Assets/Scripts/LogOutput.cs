@@ -5,7 +5,8 @@ using TMPro;
 
 public class LogOutput : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI[] texts;
+    [SerializeField] Transform verticalLayout;
+    TextMeshProUGUI[] texts;
     int textIndex = 0;
 
     [SerializeField] List<string> normalStrings = new List<string>();
@@ -18,7 +19,7 @@ public class LogOutput : MonoBehaviour
 
     private void Start()
     {
-        texts = GetComponentsInChildren<TextMeshProUGUI>();
+        texts = verticalLayout.GetComponentsInChildren<TextMeshProUGUI>();
     }
 
     public void StartOutput()
