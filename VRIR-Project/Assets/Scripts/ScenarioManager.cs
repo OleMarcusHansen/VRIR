@@ -65,6 +65,8 @@ public class ScenarioManager : MonoBehaviour
         yield return new WaitForSeconds(secondsUntilRedWarnings);
 
         // start red warning output
+        logOutput.yellowWarnings = false;
+        logOutput.databaseWarnings = true;
         logOutput.redWarnings = true;
     }
 

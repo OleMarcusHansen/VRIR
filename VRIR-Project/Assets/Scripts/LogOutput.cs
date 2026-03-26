@@ -11,11 +11,14 @@ public class LogOutput : MonoBehaviour
 
     [SerializeField] List<string> normalStrings = new List<string>();
     [SerializeField] List<string> yellowStrings = new List<string>();
+    [SerializeField] List<string> databaseStrings = new List<string>();
     [SerializeField] List<string> redStrings = new List<string>();
 
     bool outputLog = true;
     public bool yellowWarnings;
     public bool redWarnings;
+
+    public bool databaseWarnings;
 
     [SerializeField] AlarmManager alarmManager;
 
@@ -33,6 +36,14 @@ public class LogOutput : MonoBehaviour
         outputLog = false;
     }
 
+    public void StartDatabaseWarnings()
+    {
+        databaseWarnings = true;
+    }
+    public void StopDatabaseWarnings()
+    {
+        databaseWarnings = false;
+    }
     public void StopYellowWarnings()
     {
         yellowWarnings = false;
@@ -92,6 +103,14 @@ public class LogOutput : MonoBehaviour
 
             // trigger alarm light
             alarmManager.PlayAlarms(red:false);
+        }
+        else if (databaseWarnings && Random.value > 0.6)
+        {
+            texts[textIndex].text = databaseStrings[Random.Range(0, databaseStrings.Count)];
+            texts[textIndex].color = Color.yellow;
+
+            // trigger alarm light
+            alarmManager.PlayAlarms(red: false);
         }
         else
         {
