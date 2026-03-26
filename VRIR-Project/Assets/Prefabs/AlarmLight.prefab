@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7800266869318799892}
+  - component: {fileID: 4786929245195206375}
   m_Layer: 0
   m_Name: AlarmLight
   m_TagString: Untagged
@@ -32,6 +33,28 @@ Transform:
   - {fileID: 6334270485413471435}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4786929245195206375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7728397675887312847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae59d39d39cced54eac2d47ac520600a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Alarm
+  meshRenderer: {fileID: 5164773003016298404}
+  normalMaterials:
+  - {fileID: 2100000, guid: 5e4fd04dbe61cfe46b5e5fc4c379e099, type: 2}
+  - {fileID: 2100000, guid: 128af33357a10bb4da459486652755d1, type: 2}
+  yellowMaterials:
+  - {fileID: 2100000, guid: 5e4fd04dbe61cfe46b5e5fc4c379e099, type: 2}
+  - {fileID: 2100000, guid: 06ec547f2ae61a74f878837b220a65a7, type: 2}
+  redMaterials:
+  - {fileID: 2100000, guid: 5e4fd04dbe61cfe46b5e5fc4c379e099, type: 2}
+  - {fileID: 2100000, guid: 93f15faaa0236d240b5a937e082f4f2e, type: 2}
 --- !u!1001 &5795393914327450400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94,13 +117,18 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 128af33357a10bb4da459486652755d1, type: 2}
     - target: {fileID: 919132149155446097, guid: f8d217715885a4346869451f74946d12, type: 3}
       propertyPath: m_Name
-      value: AlarmLight (1)
+      value: AlarmLight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8d217715885a4346869451f74946d12, type: 3}
+--- !u!23 &5164773003016298404 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: f8d217715885a4346869451f74946d12, type: 3}
+  m_PrefabInstance: {fileID: 5795393914327450400}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6334270485413471435 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f8d217715885a4346869451f74946d12, type: 3}

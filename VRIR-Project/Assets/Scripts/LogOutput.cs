@@ -17,6 +17,8 @@ public class LogOutput : MonoBehaviour
     public bool yellowWarnings;
     public bool redWarnings;
 
+    [SerializeField] AlarmManager alarmManager;
+
     private void Start()
     {
         texts = verticalLayout.GetComponentsInChildren<TextMeshProUGUI>();
@@ -81,6 +83,7 @@ public class LogOutput : MonoBehaviour
             texts[textIndex].color = Color.red;
 
             // trigger alarm light
+            alarmManager.PlayAlarms(red:true);
         }
         else if (yellowWarnings && Random.value > 0.6)
         {
@@ -88,6 +91,7 @@ public class LogOutput : MonoBehaviour
             texts[textIndex].color = Color.yellow;
 
             // trigger alarm light
+            alarmManager.PlayAlarms(red:false);
         }
         else
         {
