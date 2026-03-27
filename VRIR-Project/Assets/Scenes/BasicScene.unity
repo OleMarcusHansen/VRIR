@@ -6788,6 +6788,10 @@ PrefabInstance:
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 817372469}
+    - target: {fileID: 7068282635962521098, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StopYellowWarnings
+      objectReference: {fileID: 0}
     - target: {fileID: 7310635090745596027, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
