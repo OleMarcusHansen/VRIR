@@ -30,6 +30,7 @@ public class MenuManager : MonoBehaviour
     }
     public void ToggleResultsMenu(bool b)
     {
+        ToggleMainMenu(b);
         resultsMenu.SetActive(b);
     }
 
