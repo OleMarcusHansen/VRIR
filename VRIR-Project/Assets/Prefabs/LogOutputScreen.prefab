@@ -1290,9 +1290,9 @@ MonoBehaviour:
   yellowStrings:
   - Login attempt repeatedly failed
   - Critical action attempt detected
-  - Unusual system operation
+  - Unusual user operation
   databaseStrings:
-  - Unusual system operation
+  - Data inconsistencies detected
   - Database error detected
   - Faulty database information
   redStrings:
@@ -1300,6 +1300,7 @@ MonoBehaviour:
   - 'Database manually altered '
   - Database manually accessed
   - Malware detected
+  - Unusual system operation
   yellowWarnings: 0
   redWarnings: 0
   databaseWarnings: 0

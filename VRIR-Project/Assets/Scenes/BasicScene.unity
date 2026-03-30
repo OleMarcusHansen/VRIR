@@ -6404,104 +6404,15 @@ PrefabInstance:
       propertyPath: alarmManager
       value: 
       objectReference: {fileID: 394507484}
-    - target: {fileID: 1283405837609786040, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: databaseStrings.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1283405837609786040, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: lateYellowStrings.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1283405837609786040, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: 'databaseStrings.Array.data[0]'
-      value: Unusual system operation
-      objectReference: {fileID: 0}
-    - target: {fileID: 1283405837609786040, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: 'databaseStrings.Array.data[1]'
-      value: Database error detected
-      objectReference: {fileID: 0}
-    - target: {fileID: 1283405837609786040, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: 'databaseStrings.Array.data[2]'
-      value: Faulty database information
-      objectReference: {fileID: 0}
-    - target: {fileID: 1283405837609786040, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: 'lateYellowStrings.Array.data[0]'
-      value: Unusual system operation
-      objectReference: {fileID: 0}
-    - target: {fileID: 1283405837609786040, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: 'lateYellowStrings.Array.data[1]'
-      value: Database issue detected
-      objectReference: {fileID: 0}
-    - target: {fileID: 1283405837609786040, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: 'lateYellowStrings.Array.data[2]'
-      value: Faulty database information
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179204704113740547, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179204704113740547, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2179204704113740547, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8602580663821257059}
-    - target: {fileID: 2179204704113740547, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179204704113740547, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartPrintLog
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179204704113740547, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Printer, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179204704113740547, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Task, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 8602580663821257059}
-    - target: {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: StartPrintLog
-      objectReference: {fileID: 0}
-    - target: {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Printer, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: Log saved and printed
-      objectReference: {fileID: 0}
-    - target: {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
-      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7721142110820558841, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
       propertyPath: m_Name
       value: LogOutputScreen
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2195814213843688366, guid: 3431d337aa8123d43ab108da7d1152e5, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
