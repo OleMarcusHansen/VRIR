@@ -9,6 +9,8 @@ public class Tooltip : MonoBehaviour
 
     [SerializeField] TextMeshPro text;
 
+    bool isHover;
+
     void Update()
     {
         if (gameObject.activeSelf)
@@ -24,6 +26,7 @@ public class Tooltip : MonoBehaviour
         {
             text.text = selectEnterEventArgs.interactableObject.transform.GetComponent<TooltipSelectProvider>().tip;
             gameObject.SetActive(true);
+            isHover = false;
         }
     }
 
@@ -33,12 +36,17 @@ public class Tooltip : MonoBehaviour
         {
             text.text = hoverEnterEventArgs.interactableObject.transform.GetComponent<TooltipHoverProvider>().tip;
             gameObject.SetActive(true);
+            isHover = true;
         }
     }
 
 
-    public void ClearTooltip()
+    public void ClearTooltip(bool hover)
     {
-        gameObject.SetActive(false);
+        if (isHover == hover)
+        {
+            gameObject.SetActive(false);
+            hover = false;
+        }
     }
 }
