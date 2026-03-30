@@ -107,10 +107,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "The system ran as normal\nAction was performed and logged correctly\nThe
-    system performed a normal action\nDatabase was accessed correctly\nUser performed
-    a normal action\nNormal system operation\nLogin attempt repeatedly failed\nCritical
-    action attempt detected\nUnusual system operation\nCritical action performed\nDatabase
-    manually altered \nDatabase manually accessed\nMalware detected"
+    system performed a normal action\nThe system ran as normal\nDatabase was accessed
+    correctly\nUnusual user operation\nUser performed a normal action\nNormal system
+    operation\nLogin attempt repeatedly failed\nThe system ran as normal\nUnusual
+    user operation\nDatabase was accessed correctly\nData inconsistencies detected\nThe
+    system performed a normal action\nCritical action attempt detected\nAction was
+    performed and logged correctly\nUnusual system operation\nCritical action performed\nDatabase
+    manually altered \nThe system performed a normal action\nDatabase manually altered
+    \nCritical action performed\nDatabase manually accessed\nMalware detected"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
