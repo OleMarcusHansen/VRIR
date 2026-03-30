@@ -44,7 +44,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1cd9b07b1c452743bba9efd45e06726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioManager
-  scenarioExecutionFlowCorrect: []
+  scenarioStarted: 0
+  scenarioExecutionFlowCorrect:
+  - Read Incident Response Plan
+  - Notify Leaders
+  - Insert Secure Config
+  - Enforce Two-Factor Authentication
+  - Renew Passwords
+  - Log Out All Users
+  - Run System Analysis
+  - Save System State
+  - Run Malware Remover
+  - Prepare Correct Backup Database
+  - Save Log
+  - Revert to Backup
+  - Document Detection
+  - Document Containment
+  - Document Eradication
+  - Document Recovery
+  - Document Documentation
   scenarioExecutionFlowPerformed: []
-  secondsUntilYellowWarnings: 0
-  secondsUntilRedWarnings: 0
+  secondsUntilYellowWarnings: 30
+  secondsUntilRedWarnings: 30
+  logOutput: {fileID: 0}
+  startScreen: {fileID: 0}
