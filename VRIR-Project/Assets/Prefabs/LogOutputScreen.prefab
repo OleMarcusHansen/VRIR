@@ -493,7 +493,6 @@ GameObject:
   - component: {fileID: 4993828814150560108}
   - component: {fileID: 8895046973686355531}
   - component: {fileID: 2179204704113740547}
-  - component: {fileID: 2195814213843688366}
   m_Layer: 5
   m_Name: ButtonPrint
   m_TagString: Untagged
@@ -603,9 +602,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2195814213843688366}
-        m_TargetAssemblyTypeName: Task, Assembly-CSharp
-        m_MethodName: CompleteTask
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Printer, Assembly-CSharp
+        m_MethodName: StartPrintLog
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -613,36 +612,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2195814213843688366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3951282304153806932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a947d40b40885584c97a2a25138d827f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Task
-  taskName: Save Log
-  completed: 0
-  repeatable: 1
-  onTaskPerformed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1283405837609786040}
-        m_TargetAssemblyTypeName: LogOutput, Assembly-CSharp
-        m_MethodName: AddString
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Log saved and printed
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &4091771510020341626
@@ -1322,6 +1291,10 @@ MonoBehaviour:
   - Login attempt repeatedly failed
   - Critical action attempt detected
   - Unusual system operation
+  databaseStrings:
+  - Unusual system operation
+  - Database error detected
+  - Faulty database information
   redStrings:
   - Critical action performed
   - 'Database manually altered '
@@ -1329,6 +1302,8 @@ MonoBehaviour:
   - Malware detected
   yellowWarnings: 0
   redWarnings: 0
+  databaseWarnings: 0
+  alarmManager: {fileID: 0}
 --- !u!114 &3625427656370674229
 MonoBehaviour:
   m_ObjectHideFlags: 0
