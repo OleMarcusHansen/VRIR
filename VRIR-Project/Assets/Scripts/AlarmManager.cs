@@ -7,6 +7,10 @@ public class AlarmManager : MonoBehaviour
 
     [SerializeField] Lamp lamp;
 
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip yellowWarningClip;
+    [SerializeField] AudioClip redWarningClip;
+
     public void PlayAlarms(bool red)
     {
         foreach (Alarm alarm in alarms)
@@ -18,5 +22,15 @@ public class AlarmManager : MonoBehaviour
         lamp.StartAlarm(red);
 
         // add alarm sound
+        if (red)
+        {
+            audioSource.clip = redWarningClip;
+            audioSource.Play();
+        }
+        else
+        {
+            audioSource.clip = yellowWarningClip;
+            audioSource.Play();
+        }
     }
 }

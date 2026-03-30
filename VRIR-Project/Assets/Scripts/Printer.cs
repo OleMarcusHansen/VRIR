@@ -6,6 +6,7 @@ public class Printer : MonoBehaviour
 {
     [SerializeField] Transform printSpawn;
     [SerializeField] GameObject logPrefab;
+    [SerializeField] AudioSource audioSource;
 
     bool isPrinting;
 
@@ -25,18 +26,22 @@ public class Printer : MonoBehaviour
     IEnumerator PrintLog()
     {
         isPrinting = true;
+        audioSource.Play();
 
-        yield return new WaitForSeconds(0.8f);
-
-        Instantiate(logPrefab, printSpawn);
-
-        yield return new WaitForSeconds(0.8f);
+        //yield return new WaitForSeconds(2.75f);
+        yield return new WaitForSeconds(.3f);
 
         Instantiate(logPrefab, printSpawn);
 
-        yield return new WaitForSeconds(0.8f);
+        //yield return new WaitForSeconds(.4f);
+        yield return new WaitForSeconds(1.2f);
 
         Instantiate(logPrefab, printSpawn);
+
+        //yield return new WaitForSeconds(.4f);
+        //yield return new WaitForSeconds(.9f);
+
+        //Instantiate(logPrefab, printSpawn);
 
         isPrinting = false;
         yield return null;
