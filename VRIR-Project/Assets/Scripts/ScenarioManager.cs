@@ -15,6 +15,8 @@ public class ScenarioManager : MonoBehaviour
     [SerializeField] LogOutput logOutput;
     [SerializeField] GameObject startScreen;
 
+    [SerializeField] ResultsManager resultsManager;
+
     public static ScenarioManager instance;
     void Awake()
     {
@@ -75,6 +77,7 @@ public class ScenarioManager : MonoBehaviour
         logOutput.EndOutput();
 
         // calculate and show score and feedback
+        resultsManager.CreateMenu(scenarioExecutionFlowCorrect, scenarioExecutionFlowPerformed.ToArray());
 
         // present menu to quit or restart scenario
     }
