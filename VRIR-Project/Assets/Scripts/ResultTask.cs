@@ -12,4 +12,9 @@ public class ResultTask : MonoBehaviour
         text.text = taskName;
         image.color = color;
     }
+
+    public void SetColor(Color color)
+    {
+        image.color = color;
+    }
 }

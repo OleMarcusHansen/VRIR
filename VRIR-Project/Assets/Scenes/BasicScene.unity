@@ -6279,6 +6279,10 @@ PrefabInstance:
       propertyPath: resultsManager
       value: 
       objectReference: {fileID: 471967343}
+    - target: {fileID: 2403596436077723580, guid: 2699b202359484e4fa5aa86416c9e8ea, type: 3}
+      propertyPath: scenarioExecutionFlowCorrectPoints.Array.size
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 4478048225274502704, guid: 2699b202359484e4fa5aa86416c9e8ea, type: 3}
       propertyPath: m_Name
       value: ScenarioManager
@@ -7406,6 +7410,22 @@ PrefabInstance:
     - target: {fileID: 3885124721341438942, guid: c9200a1742a14274bb71b88382684180, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986998647347678040, guid: c9200a1742a14274bb71b88382684180, type: 3}
+      propertyPath: neutral.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986998647347678040, guid: c9200a1742a14274bb71b88382684180, type: 3}
+      propertyPath: neutral.b
+      value: 0.3509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986998647347678040, guid: c9200a1742a14274bb71b88382684180, type: 3}
+      propertyPath: neutral.g
+      value: 0.3509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986998647347678040, guid: c9200a1742a14274bb71b88382684180, type: 3}
+      propertyPath: neutral.r
+      value: 0.3509434
       objectReference: {fileID: 0}
     - target: {fileID: 7986998647347678040, guid: c9200a1742a14274bb71b88382684180, type: 3}
       propertyPath: feedbackParent
