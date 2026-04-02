@@ -6,6 +6,9 @@ public class ServerManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI infoText;
 
+    [SerializeField] Transform spawnPoint;
+    [SerializeField] GameObject databasePrefab;
+
     public void InsertDatabase(SelectEnterEventArgs selectEnterEventArgs)
     {
         selectEnterEventArgs.interactableObject.transform.GetComponent<Task>().CompleteTask();
@@ -19,5 +22,10 @@ public class ServerManager : MonoBehaviour
     public void RemoveDatabase(SelectExitEventArgs selectExitEventArgs)
     {
         infoText.text = "<- Insert backup database";
+    }
+
+    public void SaveDatabase()
+    {
+        Instantiate(databasePrefab, spawnPoint);
     }
 }
