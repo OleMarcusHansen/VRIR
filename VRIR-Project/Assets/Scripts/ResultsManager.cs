@@ -25,6 +25,50 @@ public class ResultsManager : MonoBehaviour
 
     }
 
+    public void CreateMenu(Task[] correctTasks, Task[] performedTasks)
+    {
+        AddTasks(correctTasks, correctTasksParent);
+        AddPerformedTasks(performedTasks, performedTasksParent);
+    }
+
+    void AddTasks(Task[] tasks, Transform parent)
+    {
+        foreach (Task task in tasks)
+        {
+            ResultTask resultTask = Instantiate(resultTaskPrefab, parent).GetComponent<ResultTask>();
+            resultTask.Setup(task.taskName, positive);
+
+            if (task.nonUserTask)
+            {
+                resultTask.SetColor(neutral);
+            }
+        }
+    }
+    void AddPerformedTasks(Task[] tasks, Transform parent)
+    {
+        List<int> IDs = new List<int>();
+
+        foreach (Task task in tasks)
+        {
+            ResultTask resultTask = Instantiate(resultTaskPrefab, parent).GetComponent<ResultTask>();
+            resultTask.Setup(task.taskName, positive);
+
+            if (task.nonUserTask)
+            {
+                resultTask.SetColor(neutral);
+            }
+            foreach (int id in task.prerequisites)
+            {
+                if (!IDs.Contains(id))
+                {
+                    resultTask.SetColor(negative);
+                }
+            }
+
+            IDs.Add(task.taskID);
+        }
+    }
+
     void AddTasks(string[] tasks, bool[] points, Transform parent)
     {
         for (int i = 0; i < tasks.Length; i++)
@@ -38,30 +82,6 @@ public class ResultsManager : MonoBehaviour
             {
                 resultTask.Setup(tasks[i], negative);
             }
-        }
-    }
-    void EvaluateTasks(List<string> correctTasks, List<string> performedTasks)
-    {
-        // add score for every performed task that exists in correct tasks
-        for (int i = 0; i < correctTasks.Count; i++)
-        {
-            if (performedTasks.Contains(correctTasks[i]))
-            {
-                score++;
-            }
-        }
-
-        List<string> completed = new List<string>();
-
-        // check conditions and make red, give comment, and subtract score
-        for (int i = 0; i < performedTasks.Count; i++)
-        {
-            if (!correctTasks.Contains(performedTasks[i]))
-            {
-                resultTasks[i].SetColor(neutral);
-            }
-            
-            completed.Add(correctTasks[i]);
         }
     }
 }

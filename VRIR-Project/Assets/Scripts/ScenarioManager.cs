@@ -26,6 +26,10 @@ public class ScenarioManager : MonoBehaviour
 
     [SerializeField] int score = 0;
 
+    [SerializeField] Task userWarningsTask;
+    [SerializeField] Task systemWarningsTask;
+    [SerializeField] Task databaseWarningsTask;
+
     public static ScenarioManager instance;
     void Awake()
     {
@@ -159,13 +163,16 @@ public class ScenarioManager : MonoBehaviour
 
         // start yellow warning output
         logOutput.yellowWarnings = true;
+        userWarningsTask.CompleteTask();
 
         yield return new WaitForSeconds(secondsUntilRedWarnings);
 
         // start red warning output
         logOutput.yellowWarnings = false;
         logOutput.databaseWarnings = true;
+        systemWarningsTask.CompleteTask();
         logOutput.redWarnings = true;
+        databaseWarningsTask.CompleteTask();
     }
 
     public void EndScenario()
@@ -177,7 +184,8 @@ public class ScenarioManager : MonoBehaviour
         //{
         //    scenarioExecutionFlowPerformed.RemoveAt(0);
         //}
-        resultsManager.CreateMenu(scenarioExecutionFlowCorrect.ToArray(), scenarioExecutionFlowCorrectPoints.ToArray(), scenarioExecutionFlowPerformed.ToArray(), scenarioExecutionFlowPerformedPoints.ToArray(), feedbackComments.ToArray());
+        //resultsManager.CreateMenu(scenarioExecutionFlowCorrect.ToArray(), scenarioExecutionFlowCorrectPoints.ToArray(), scenarioExecutionFlowPerformed.ToArray(), scenarioExecutionFlowPerformedPoints.ToArray(), feedbackComments.ToArray());
+        resultsManager.CreateMenu(tasksCorrect.ToArray(), tasksPerformed.ToArray());
 
         // present menu to quit or restart scenario
     }

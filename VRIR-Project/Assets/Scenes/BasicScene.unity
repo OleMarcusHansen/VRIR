@@ -1583,6 +1583,7 @@ MonoBehaviour:
   taskFailureFeedback: 
   completed: 0
   repeatable: 1
+  nonUserTask: 0
   onTaskPerformed:
     m_PersistentCalls:
       m_Calls:
@@ -2769,6 +2770,7 @@ MonoBehaviour:
   taskFailureFeedback: 
   completed: 0
   repeatable: 0
+  nonUserTask: 1
   onTaskPerformed:
     m_PersistentCalls:
       m_Calls: []
@@ -3808,6 +3810,7 @@ MonoBehaviour:
   taskFailureFeedback: 
   completed: 0
   repeatable: 0
+  nonUserTask: 1
   onTaskPerformed:
     m_PersistentCalls:
       m_Calls: []
@@ -5100,6 +5103,7 @@ MonoBehaviour:
   taskFailureFeedback: 
   completed: 0
   repeatable: 1
+  nonUserTask: 0
   onTaskPerformed:
     m_PersistentCalls:
       m_Calls:
@@ -5437,6 +5441,7 @@ MonoBehaviour:
   taskFailureFeedback: 
   completed: 0
   repeatable: 0
+  nonUserTask: 1
   onTaskPerformed:
     m_PersistentCalls:
       m_Calls: []
@@ -6316,6 +6321,18 @@ PrefabInstance:
       propertyPath: resultsManager
       value: 
       objectReference: {fileID: 471967343}
+    - target: {fileID: 2403596436077723580, guid: 2699b202359484e4fa5aa86416c9e8ea, type: 3}
+      propertyPath: userWarningsTask
+      value: 
+      objectReference: {fileID: 1991653045}
+    - target: {fileID: 2403596436077723580, guid: 2699b202359484e4fa5aa86416c9e8ea, type: 3}
+      propertyPath: systemWarningsTask
+      value: 
+      objectReference: {fileID: 1282552330}
+    - target: {fileID: 2403596436077723580, guid: 2699b202359484e4fa5aa86416c9e8ea, type: 3}
+      propertyPath: databaseWarningsTask
+      value: 
+      objectReference: {fileID: 1011503566}
     - target: {fileID: 2403596436077723580, guid: 2699b202359484e4fa5aa86416c9e8ea, type: 3}
       propertyPath: tasksCorrect.Array.size
       value: 20
@@ -7448,11 +7465,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
       propertyPath: 'prerequisites.Array.data[0]'
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
       propertyPath: 'prerequisites.Array.data[1]'
-      value: 8
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.size

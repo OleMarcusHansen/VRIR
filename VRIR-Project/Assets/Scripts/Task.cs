@@ -9,6 +9,7 @@ public class Task : MonoBehaviour
     public string taskFailureFeedback;
     public bool completed;
     public bool repeatable;
+    public bool nonUserTask;
 
     public UnityEvent onTaskPerformed;
 
