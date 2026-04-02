@@ -6,20 +6,11 @@ public class Task : MonoBehaviour
     public int taskID;
     public int[] prerequisites;
     public string taskName;
+    public string taskFailureFeedback;
     public bool completed;
     public bool repeatable;
 
     public UnityEvent onTaskPerformed;
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 
     public void CompleteTask()
     {

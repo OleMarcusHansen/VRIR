@@ -13,6 +13,9 @@ public class ScenarioManager : MonoBehaviour
 
     [SerializeField] List<string> feedbackComments;
 
+    [SerializeField] List<Task> tasksCorrect;
+    [SerializeField] List<Task> tasksPerformed = new List<Task>();
+
     [SerializeField] int secondsUntilYellowWarnings;
     [SerializeField] int secondsUntilRedWarnings;
 
@@ -34,6 +37,11 @@ public class ScenarioManager : MonoBehaviour
         {
             Debug.LogWarning("Two ScenarioManagers exist in the same scene");
         }
+    }
+
+    public void AddPerformedTask(Task task)
+    {
+        tasksPerformed.Add(task);
     }
 
     public void AddPerformedTask(string taskName)

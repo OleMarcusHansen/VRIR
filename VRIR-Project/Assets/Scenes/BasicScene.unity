@@ -1015,6 +1015,10 @@ PrefabInstance:
       value: DatabaseBackup (3)
       objectReference: {fileID: 0}
     - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
+      propertyPath: taskID
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
       propertyPath: taskName
       value: Prepare Wrong Database
       objectReference: {fileID: 0}
@@ -1334,6 +1338,10 @@ PrefabInstance:
       value: DatabaseBackup (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
+      propertyPath: taskID
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
       propertyPath: taskName
       value: Prepare Wrong Database
       objectReference: {fileID: 0}
@@ -1561,8 +1569,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a947d40b40885584c97a2a25138d827f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Task
-  taskID: 0
-  prerequisites: 
+  taskID: 3
+  prerequisites: 0100000002000000
   taskName: Insert Secure Config
   taskFailureFeedback: 
   completed: 0
@@ -1977,8 +1985,28 @@ PrefabInstance:
       value: BinderRecover
       objectReference: {fileID: 0}
     - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: taskID
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
       propertyPath: taskName
       value: Document Recovery
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: prerequisites.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: 'prerequisites.Array.data[0]'
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: 'prerequisites.Array.data[1]'
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: 'prerequisites.Array.data[2]'
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2160,12 +2188,24 @@ PrefabInstance:
       value: DatabaseBackup (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
+      propertyPath: taskID
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
       propertyPath: taskName
       value: Prepare Correct Backup Database
       objectReference: {fileID: 0}
     - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
       propertyPath: repeatable
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
+      propertyPath: prerequisites.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
+      propertyPath: 'prerequisites.Array.data[0]'
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.size
@@ -2459,8 +2499,28 @@ PrefabInstance:
       value: BinderEradicate
       objectReference: {fileID: 0}
     - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: taskID
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
       propertyPath: taskName
       value: Document Eradication
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: prerequisites.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: 'prerequisites.Array.data[0]'
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: 'prerequisites.Array.data[1]'
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: 'prerequisites.Array.data[2]'
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2618,6 +2678,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3910642930367536087, guid: 88a5d792136112f4caa18f693299c4c1, type: 3}
   m_PrefabInstance: {fileID: 5362276810594511842}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1011503564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1011503565}
+  - component: {fileID: 1011503566}
+  m_Layer: 0
+  m_Name: DatabaseWarningsTask
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1011503565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011503564}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1459193908205227748}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1011503566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011503564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a947d40b40885584c97a2a25138d827f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Task
+  taskID: 8
+  prerequisites: 
+  taskName: Database Warnings Started
+  taskFailureFeedback: 
+  completed: 0
+  repeatable: 0
+  onTaskPerformed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &1027018487 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6550423241867402622, guid: a29dc4b9d85643c4998484b49c9c43af, type: 3}
@@ -3604,6 +3717,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3570342957160878187, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
   m_PrefabInstance: {fileID: 1261279062}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1282552328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1282552329}
+  - component: {fileID: 1282552330}
+  m_Layer: 0
+  m_Name: SystemWarningsTask
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1282552329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282552328}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1459193908205227748}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1282552330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282552328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a947d40b40885584c97a2a25138d827f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Task
+  taskID: 7
+  prerequisites: 
+  taskName: System Warnings Started
+  taskFailureFeedback: 
+  completed: 0
+  repeatable: 0
+  onTaskPerformed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1292998350
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3791,8 +3957,32 @@ PrefabInstance:
       value: BinderContain
       objectReference: {fileID: 0}
     - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: taskID
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
       propertyPath: taskName
       value: Document Containment
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: prerequisites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: 'prerequisites.Array.data[0]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: 'prerequisites.Array.data[1]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: 'prerequisites.Array.data[2]'
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: 'prerequisites.Array.data[3]'
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5145,6 +5335,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3570342957160878187, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
   m_PrefabInstance: {fileID: 1983720492}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1991653043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1991653044}
+  - component: {fileID: 1991653045}
+  m_Layer: 0
+  m_Name: UserWarningsTask
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1991653044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991653043}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1459193908205227748}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1991653045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991653043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a947d40b40885584c97a2a25138d827f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Task
+  taskID: 1
+  prerequisites: 
+  taskName: User Warnings Started
+  taskFailureFeedback: 
+  completed: 0
+  repeatable: 0
+  onTaskPerformed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &2001724834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6024,7 +6267,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1050356140298242550, guid: 2699b202359484e4fa5aa86416c9e8ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1991653044}
+    - targetCorrespondingSourceObject: {fileID: 1050356140298242550, guid: 2699b202359484e4fa5aa86416c9e8ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1282552329}
+    - targetCorrespondingSourceObject: {fileID: 1050356140298242550, guid: 2699b202359484e4fa5aa86416c9e8ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1011503565}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2699b202359484e4fa5aa86416c9e8ea, type: 3}
 --- !u!114 &1459193908205227747 stripped
@@ -6038,6 +6290,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1cd9b07b1c452743bba9efd45e06726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScenarioManager
+--- !u!4 &1459193908205227748 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1050356140298242550, guid: 2699b202359484e4fa5aa86416c9e8ea, type: 3}
+  m_PrefabInstance: {fileID: 1459193908205227746}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1555772242005069502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6873,6 +7130,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9013313168497515977, guid: 029ad82e9a449e1449d794a74341bf93, type: 3}
+      propertyPath: taskID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013313168497515977, guid: 029ad82e9a449e1449d794a74341bf93, type: 3}
+      propertyPath: prerequisites.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013313168497515977, guid: 029ad82e9a449e1449d794a74341bf93, type: 3}
+      propertyPath: 'prerequisites.Array.data[0]'
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6995,8 +7264,24 @@ PrefabInstance:
       value: BinderDetect
       objectReference: {fileID: 0}
     - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: taskID
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
       propertyPath: taskName
       value: Document Detection
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: prerequisites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: 'prerequisites.Array.data[0]'
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: 'prerequisites.Array.data[1]'
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.size
@@ -7256,6 +7541,30 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1245882601}
+    - target: {fileID: 6890263389177789840, guid: 9ddf78b92c8cf844db663cb89d53fa95, type: 3}
+      propertyPath: taskID
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890263389177789840, guid: 9ddf78b92c8cf844db663cb89d53fa95, type: 3}
+      propertyPath: prerequisites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890263389177789840, guid: 9ddf78b92c8cf844db663cb89d53fa95, type: 3}
+      propertyPath: 'prerequisites.Array.data[0]'
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890263389177789840, guid: 9ddf78b92c8cf844db663cb89d53fa95, type: 3}
+      propertyPath: 'prerequisites.Array.data[1]'
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890263389177789840, guid: 9ddf78b92c8cf844db663cb89d53fa95, type: 3}
+      propertyPath: 'prerequisites.Array.data[2]'
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890263389177789840, guid: 9ddf78b92c8cf844db663cb89d53fa95, type: 3}
+      propertyPath: 'prerequisites.Array.data[3]'
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 6890263389177789840, guid: 9ddf78b92c8cf844db663cb89d53fa95, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -7688,6 +7997,10 @@ PrefabInstance:
       value: DatabaseBackup
       objectReference: {fileID: 0}
     - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
+      propertyPath: taskID
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
       propertyPath: taskName
       value: Prepare Wrong Database
       objectReference: {fileID: 0}
@@ -7860,6 +8173,10 @@ PrefabInstance:
       value: 0.5283019
       objectReference: {fileID: 0}
     - target: {fileID: 2215049623014275937, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: taskID
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2215049623014275937, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 817372469}
@@ -8000,6 +8317,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3860858427019008410, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: taskID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3860858427019008410, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 817372469}
@@ -8034,6 +8355,26 @@ PrefabInstance:
     - target: {fileID: 4437390375612682609, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: m_Name
       value: SystemScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484972098850598754, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: taskID
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484972098850598754, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: prerequisites.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484972098850598754, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: 'prerequisites.Array.data[0]'
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484972098850598754, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: 'prerequisites.Array.data[1]'
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484972098850598754, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: 'prerequisites.Array.data[2]'
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4484972098850598754, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.size
@@ -8144,6 +8485,18 @@ PrefabInstance:
       value: 0.5283019
       objectReference: {fileID: 0}
     - target: {fileID: 6749777342448764316, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: taskID
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749777342448764316, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: prerequisites.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749777342448764316, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: 'prerequisites.Array.data[0]'
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749777342448764316, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 817372469}
@@ -8151,6 +8504,10 @@ PrefabInstance:
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 817372469}
+    - target: {fileID: 7068282635962521098, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: taskID
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7068282635962521098, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -8268,6 +8625,22 @@ PrefabInstance:
       value: 0.5283019
       objectReference: {fileID: 0}
     - target: {fileID: 8630716021647967562, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: taskID
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8630716021647967562, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: prerequisites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8630716021647967562, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: 'prerequisites.Array.data[0]'
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8630716021647967562, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: 'prerequisites.Array.data[1]'
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8630716021647967562, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 817372469}
@@ -8365,6 +8738,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7782751424165605051, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: taskID
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: -7782751424165605051, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: prerequisites.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7782751424165605051, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: 'prerequisites.Array.data[0]'
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -7782751424165605051, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.size
       value: 1
