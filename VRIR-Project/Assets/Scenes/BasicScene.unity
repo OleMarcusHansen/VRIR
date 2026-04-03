@@ -1027,6 +1027,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
+      propertyPath: taskFailureFeedback
+      value: Ensure correct backup database is being prepared when reverting to a
+        backup
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1354,6 +1359,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
+      propertyPath: taskFailureFeedback
+      value: Ensure correct backup database is being prepared when reverting to a
+        backup
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1580,7 +1590,7 @@ MonoBehaviour:
   taskID: 3
   prerequisites: 0100000002000000
   taskName: Insert Secure Config
-  taskFailureFeedback: 
+  taskFailureFeedback: Premptive change of config may cause unnecessary system disruption
   completed: 0
   repeatable: 1
   nonUserTask: 0
@@ -2002,6 +2012,11 @@ PrefabInstance:
       value: Document Recovery
       objectReference: {fileID: 0}
     - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: taskFailureFeedback
+      value: Ensure documentation is done after all related action has been completed
+        to not miss any part of the incident
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
       propertyPath: prerequisites.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -2218,6 +2233,10 @@ PrefabInstance:
     - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
       propertyPath: repeatable
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
+      propertyPath: taskFailureFeedback
+      value: Backup database should only be used if the database has been affected
       objectReference: {fileID: 0}
     - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
       propertyPath: prerequisites.Array.size
@@ -2536,6 +2555,11 @@ PrefabInstance:
     - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
       propertyPath: taskName
       value: Document Eradication
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: taskFailureFeedback
+      value: Ensure documentation is done after all related action has been completed
+        to not miss any part of the incident
       objectReference: {fileID: 0}
     - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
       propertyPath: prerequisites.Array.size
@@ -4007,6 +4031,11 @@ PrefabInstance:
     - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
       propertyPath: taskName
       value: Document Containment
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: taskFailureFeedback
+      value: Ensure documentation is done after all related action has been completed
+        to not miss any part of the incident
       objectReference: {fileID: 0}
     - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
       propertyPath: prerequisites.Array.size
@@ -7312,6 +7341,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9013313168497515977, guid: 029ad82e9a449e1449d794a74341bf93, type: 3}
+      propertyPath: repeatable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013313168497515977, guid: 029ad82e9a449e1449d794a74341bf93, type: 3}
+      propertyPath: taskFailureFeedback
+      value: Unnecessary leadership notification may cause alert fatigue
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013313168497515977, guid: 029ad82e9a449e1449d794a74341bf93, type: 3}
       propertyPath: prerequisites.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -7458,6 +7495,11 @@ PrefabInstance:
     - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
       propertyPath: taskName
       value: Document Detection
+      objectReference: {fileID: 0}
+    - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
+      propertyPath: taskFailureFeedback
+      value: Ensure documentation is done after all related action has been completed
+        to not miss any part of the incident
       objectReference: {fileID: 0}
     - target: {fileID: 9145182535773050502, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
       propertyPath: prerequisites.Array.size
@@ -7654,6 +7696,10 @@ PrefabInstance:
       propertyPath: performedTasksParent
       value: 
       objectReference: {fileID: 181638806}
+    - target: {fileID: 7986998647347678040, guid: c9200a1742a14274bb71b88382684180, type: 3}
+      propertyPath: resultFeedbackPrefab
+      value: 
+      objectReference: {fileID: 380762665609575108, guid: 21b72d9edb6846f4da10820c199079df, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7741,6 +7787,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2580762632416667455, guid: 9ddf78b92c8cf844db663cb89d53fa95, type: 3}
+      propertyPath: taskFailureFeedback
+      value: Database should be saved right after backup is prepared and right before
+        reverting to it to maximise capture
+      objectReference: {fileID: 0}
+    - target: {fileID: 2580762632416667455, guid: 9ddf78b92c8cf844db663cb89d53fa95, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -7780,6 +7831,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1245882601}
+    - target: {fileID: 6890263389177789840, guid: 9ddf78b92c8cf844db663cb89d53fa95, type: 3}
+      propertyPath: taskFailureFeedback
+      value: Database should be saved and leaders should be notified before reverting
+        the database
+      objectReference: {fileID: 0}
     - target: {fileID: 6890263389177789840, guid: 9ddf78b92c8cf844db663cb89d53fa95, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -8194,6 +8250,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
+      propertyPath: taskFailureFeedback
+      value: Ensure correct backup database is being prepared when reverting to a
+        backup
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433664162162250149, guid: 1df677b67d598ad458fd7dfe66443f8d, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -8550,6 +8611,11 @@ PrefabInstance:
       value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4484972098850598754, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: taskFailureFeedback
+      value: Malware remover should be run right after system analysis and system
+        save if system warnings occur
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484972098850598754, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: prerequisites.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -8678,6 +8744,11 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6749777342448764316, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: taskFailureFeedback
+      value: Running system analysis with no indication of system fault may cause
+        unnecessary system disruptions
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749777342448764316, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: prerequisites.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -8698,6 +8769,22 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7068282635962521098, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: taskFailureFeedback
+      value: 'Not enforcing 2FA and reseting passwords before logging out users '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068282635962521098, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: prerequisites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068282635962521098, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: 'prerequisites.Array.data[0]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068282635962521098, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: 'prerequisites.Array.data[1]'
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068282635962521098, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 817372469}
@@ -8708,6 +8795,11 @@ PrefabInstance:
     - target: {fileID: 7068282635962521098, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: StopYellowWarnings
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068282635962521098, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: All users logged out by system may allow compromised users to log back
+        in
       objectReference: {fileID: 0}
     - target: {fileID: 7310635090745596027, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: m_AnchorMax.y
@@ -8816,6 +8908,11 @@ PrefabInstance:
     - target: {fileID: 8630716021647967562, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: taskID
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8630716021647967562, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
+      propertyPath: taskFailureFeedback
+      value: System state should be saved right after analysis and right before malware
+        remover to maximise capture
       objectReference: {fileID: 0}
     - target: {fileID: 8630716021647967562, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: prerequisites.Array.size
@@ -8996,6 +9093,10 @@ PrefabInstance:
     - target: {fileID: -7782751424165605051, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
       propertyPath: taskID
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -7782751424165605051, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
+      propertyPath: taskFailureFeedback
+      value: Log output should be saved after incidents have occured
       objectReference: {fileID: 0}
     - target: {fileID: -7782751424165605051, guid: 2f0e40447e26abc4f8800039de789ada, type: 3}
       propertyPath: prerequisites.Array.size

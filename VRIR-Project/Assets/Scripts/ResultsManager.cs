@@ -9,6 +9,7 @@ public class ResultsManager : MonoBehaviour
     [SerializeField] Transform feedbackParent;
 
     [SerializeField] GameObject resultTaskPrefab;
+    [SerializeField] GameObject resultFeedbackPrefab;
     [SerializeField] ResultTask[] resultTasks;
 
     [SerializeField] Color positive;
@@ -62,6 +63,10 @@ public class ResultsManager : MonoBehaviour
                 if (!IDs.Contains(id))
                 {
                     resultTask.SetColor(negative);
+
+
+                    ResultTask feedbackText = Instantiate(resultFeedbackPrefab, feedbackParent).GetComponent<ResultTask>();
+                    feedbackText.Setup(task.taskFailureFeedback, negative);
                 }
             }
 
