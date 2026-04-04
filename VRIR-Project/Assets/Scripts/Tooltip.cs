@@ -24,9 +24,12 @@ public class Tooltip : MonoBehaviour
     {
         if (selectEnterEventArgs.interactableObject.transform.GetComponent<TooltipSelectProvider>())
         {
-            text.text = selectEnterEventArgs.interactableObject.transform.GetComponent<TooltipSelectProvider>().tip;
-            gameObject.SetActive(true);
-            isHover = false;
+            if (selectEnterEventArgs.interactableObject.transform.GetComponent<TooltipSelectProvider>().enabled)
+            {
+                text.text = selectEnterEventArgs.interactableObject.transform.GetComponent<TooltipSelectProvider>().tip;
+                gameObject.SetActive(true);
+                isHover = false;
+            }
         }
     }
 
@@ -34,9 +37,12 @@ public class Tooltip : MonoBehaviour
     {
         if (hoverEnterEventArgs.interactableObject.transform.GetComponent<TooltipHoverProvider>())
         {
-            text.text = hoverEnterEventArgs.interactableObject.transform.GetComponent<TooltipHoverProvider>().tip;
-            gameObject.SetActive(true);
-            isHover = true;
+            if (hoverEnterEventArgs.interactableObject.transform.GetComponent<TooltipHoverProvider>().enabled)
+            {
+                text.text = hoverEnterEventArgs.interactableObject.transform.GetComponent<TooltipHoverProvider>().tip;
+                gameObject.SetActive(true);
+                isHover = true;
+            }
         }
     }
 
