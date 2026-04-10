@@ -10,21 +10,14 @@ public class ResultsManager : MonoBehaviour
 
     [SerializeField] GameObject resultTaskPrefab;
     [SerializeField] GameObject resultFeedbackPrefab;
-    [SerializeField] ResultTask[] resultTasks;
+
+    List<string> addedFeedback = new List<string>();
 
     [SerializeField] Color positive;
     [SerializeField] Color negative;
     [SerializeField] Color neutral;
 
     int score = 0;
-
-    public void CreateMenu(string[] correctTasks, bool[] correctPoints, string[] performedTasks, bool[] performedPoints, string[] feedback)
-    {
-        AddTasks(correctTasks, correctPoints, correctTasksParent);
-        AddTasks(performedTasks, performedPoints, performedTasksParent);
-        resultTasks = performedTasksParent.GetComponentsInChildren<ResultTask>();
-
-    }
 
     public void CreateMenu(Task[] correctTasks, Task[] performedTasks)
     {
@@ -64,29 +57,16 @@ public class ResultsManager : MonoBehaviour
                 {
                     resultTask.SetColor(negative);
 
-
-                    ResultTask feedbackText = Instantiate(resultFeedbackPrefab, feedbackParent).GetComponent<ResultTask>();
-                    feedbackText.Setup(task.taskFailureFeedback, negative);
+                    if (!addedFeedback.Contains(task.taskFailureFeedback))
+                    {
+                        ResultTask feedbackText = Instantiate(resultFeedbackPrefab, feedbackParent).GetComponent<ResultTask>();
+                        feedbackText.Setup(task.taskFailureFeedback, negative);
+                        addedFeedback.Add(task.taskFailureFeedback);
+                    }
                 }
             }
 
             IDs.Add(task.taskID);
-        }
-    }
-
-    void AddTasks(string[] tasks, bool[] points, Transform parent)
-    {
-        for (int i = 0; i < tasks.Length; i++)
-        {
-            ResultTask resultTask = Instantiate(resultTaskPrefab, parent).GetComponent<ResultTask>();
-            if (points[i])
-            {
-                resultTask.Setup(tasks[i], positive);
-            }
-            else
-            {
-                resultTask.Setup(tasks[i], negative);
-            }
         }
     }
 }
