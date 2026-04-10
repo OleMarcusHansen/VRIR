@@ -5128,6 +5128,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6916923046723181288, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
   m_PrefabInstance: {fileID: 3926095615651049722}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1848091464 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9154936694968021581, guid: a29dc4b9d85643c4998484b49c9c43af, type: 3}
+  m_PrefabInstance: {fileID: 841046795812378649}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!4 &1882290112 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4858707456389507946, guid: b2af172ae486c03479effb3c69588113, type: 3}
@@ -7956,6 +7967,10 @@ PrefabInstance:
       propertyPath: neutral.r
       value: 0.3509434
       objectReference: {fileID: 0}
+    - target: {fileID: 7986998647347678040, guid: c9200a1742a14274bb71b88382684180, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1848091464}
     - target: {fileID: 7986998647347678040, guid: c9200a1742a14274bb71b88382684180, type: 3}
       propertyPath: feedbackParent
       value: 

@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
-using System.Linq;
+using TMPro;
 
 public class ResultsManager : MonoBehaviour
 {
@@ -16,6 +16,7 @@ public class ResultsManager : MonoBehaviour
     [SerializeField] Color neutral;
 
     int score = 0;
+    [SerializeField] TextMeshProUGUI scoreText;
 
     public void CreateMenu(Task[] correctTasks, Task[] performedTasks)
     {
@@ -46,9 +47,12 @@ public class ResultsManager : MonoBehaviour
             ResultTask resultTask = Instantiate(resultTaskPrefab, parent).GetComponent<ResultTask>();
             resultTask.Setup(task.taskName, positive);
 
+            bool getPoint = true;
+
             if (task.nonUserTask)
             {
                 resultTask.SetColor(neutral);
+                getPoint = false;
             }
             foreach (int id in task.prerequisites)
             {
@@ -62,6 +66,8 @@ public class ResultsManager : MonoBehaviour
                         feedbackText.Setup(task.taskFailureFeedback, negative);
                         addedFeedback.Add(task.taskFailureFeedback);
                     }
+
+                    getPoint = false;
                 }
             }
             if (!CheckIfCorrect(task.taskID, correctTasks))
@@ -74,10 +80,18 @@ public class ResultsManager : MonoBehaviour
                     feedbackText.Setup(task.taskFailureFeedback, negative);
                     addedFeedback.Add(task.taskFailureFeedback);
                 }
+
+                getPoint = false;
+            }
+            if (getPoint)
+            {
+                score++;
             }
 
             IDs.Add(task.taskID);
         }
+
+        scoreText.text = "Score: " + score;
     }
 
     bool CheckIfCorrect(int taskID, Task[] correctTasks)
