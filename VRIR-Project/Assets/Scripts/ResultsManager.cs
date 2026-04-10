@@ -11,8 +11,6 @@ public class ResultsManager : MonoBehaviour
     [SerializeField] GameObject resultTaskPrefab;
     [SerializeField] GameObject resultFeedbackPrefab;
 
-    List<string> addedFeedback = new List<string>();
-
     [SerializeField] Color positive;
     [SerializeField] Color negative;
     [SerializeField] Color neutral;
@@ -22,7 +20,7 @@ public class ResultsManager : MonoBehaviour
     public void CreateMenu(Task[] correctTasks, Task[] performedTasks)
     {
         AddTasks(correctTasks, correctTasksParent);
-        AddPerformedTasks(performedTasks, performedTasksParent);
+        AddPerformedTasks(correctTasks, performedTasks, performedTasksParent);
     }
 
     void AddTasks(Task[] tasks, Transform parent)
@@ -38,11 +36,12 @@ public class ResultsManager : MonoBehaviour
             }
         }
     }
-    void AddPerformedTasks(Task[] tasks, Transform parent)
+    void AddPerformedTasks(Task[] correctTasks, Task[] performedTasks, Transform parent)
     {
         List<int> IDs = new List<int>();
+        List<string> addedFeedback = new List<string>();
 
-        foreach (Task task in tasks)
+        foreach (Task task in performedTasks)
         {
             ResultTask resultTask = Instantiate(resultTaskPrefab, parent).GetComponent<ResultTask>();
             resultTask.Setup(task.taskName, positive);
@@ -65,8 +64,32 @@ public class ResultsManager : MonoBehaviour
                     }
                 }
             }
+            if (!CheckIfCorrect(task.taskID, correctTasks))
+            {
+                resultTask.SetColor(negative);
+
+                if (task.taskFailureFeedback != string.Empty && !addedFeedback.Contains(task.taskFailureFeedback))
+                {
+                    ResultTask feedbackText = Instantiate(resultFeedbackPrefab, feedbackParent).GetComponent<ResultTask>();
+                    feedbackText.Setup(task.taskFailureFeedback, negative);
+                    addedFeedback.Add(task.taskFailureFeedback);
+                }
+            }
 
             IDs.Add(task.taskID);
         }
+    }
+
+    bool CheckIfCorrect(int taskID, Task[] correctTasks)
+    {
+        foreach (Task task in correctTasks)
+        {
+            if (task.taskID == taskID)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

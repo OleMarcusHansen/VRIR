@@ -8061,7 +8061,7 @@ PrefabInstance:
     - target: {fileID: 2580762632416667455, guid: 9ddf78b92c8cf844db663cb89d53fa95, type: 3}
       propertyPath: taskFailureFeedback
       value: Database should be saved right after backup is prepared and right before
-        reverting to it to maximise capture
+        reverting to maximise capture
       objectReference: {fileID: 0}
     - target: {fileID: 2580762632416667455, guid: 9ddf78b92c8cf844db663cb89d53fa95, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.size
