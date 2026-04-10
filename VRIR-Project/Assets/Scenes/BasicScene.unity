@@ -5240,7 +5240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a947d40b40885584c97a2a25138d827f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Task
-  taskID: 20
+  taskID: 30
   prerequisites: 
   taskName: Insert Standard Config
   taskFailureFeedback: 
@@ -6143,10 +6143,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuResults
       objectReference: {fileID: 0}
-    - target: {fileID: 1294112788861352356, guid: a29dc4b9d85643c4998484b49c9c43af, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3826861369503310589, guid: a29dc4b9d85643c4998484b49c9c43af, type: 3}
       propertyPath: m_Camera
       value: 
@@ -6181,7 +6177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4854198675472579544, guid: a29dc4b9d85643c4998484b49c9c43af, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 550
+      value: 750
       objectReference: {fileID: 0}
     - target: {fileID: 4854198675472579544, guid: a29dc4b9d85643c4998484b49c9c43af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6217,7 +6213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4854198675472579544, guid: a29dc4b9d85643c4998484b49c9c43af, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.454
+      value: 1.354
       objectReference: {fileID: 0}
     - target: {fileID: 4854198675472579544, guid: a29dc4b9d85643c4998484b49c9c43af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -180,10 +180,10 @@ public class ScenarioManager : MonoBehaviour
         logOutput.EndOutput();
 
         // calculate and show score and feedback
-        //if (scenarioExecutionFlowPerformed[0] == "Insert Standard Config") // remove first if standard
-        //{
-        //    scenarioExecutionFlowPerformed.RemoveAt(0);
-        //}
+        if (tasksPerformed[0].taskID == 30) // remove first if standard
+        {
+            tasksPerformed.RemoveAt(0);
+        }
         //resultsManager.CreateMenu(scenarioExecutionFlowCorrect.ToArray(), scenarioExecutionFlowCorrectPoints.ToArray(), scenarioExecutionFlowPerformed.ToArray(), scenarioExecutionFlowPerformedPoints.ToArray(), feedbackComments.ToArray());
         resultsManager.CreateMenu(tasksCorrect.ToArray(), tasksPerformed.ToArray());
 
