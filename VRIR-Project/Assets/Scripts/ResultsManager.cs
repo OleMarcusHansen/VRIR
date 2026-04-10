@@ -40,6 +40,7 @@ public class ResultsManager : MonoBehaviour
     void AddPerformedTasks(Task[] correctTasks, Task[] performedTasks, Transform parent)
     {
         List<int> IDs = new List<int>();
+        List<int> IDPoints = new List<int>();
         List<string> addedFeedback = new List<string>();
 
         foreach (Task task in performedTasks)
@@ -83,15 +84,33 @@ public class ResultsManager : MonoBehaviour
 
                 getPoint = false;
             }
+            if (IDPoints.Contains(task.taskID))
+            {
+                getPoint = false;
+            }
             if (getPoint)
             {
                 score++;
+                IDPoints.Add(task.taskID);
             }
 
             IDs.Add(task.taskID);
         }
 
-        scoreText.text = "Score: " + score;
+        scoreText.text = "Score: " + score + " / " + MaxScore(correctTasks);
+    }
+
+    int MaxScore(Task[] correctTasks)
+    {
+        int m = 0;
+        foreach (Task task in correctTasks)
+        {
+            if (!task.nonUserTask)
+            {
+                m++;
+            }
+        }
+        return m;
     }
 
     bool CheckIfCorrect(int taskID, Task[] correctTasks)

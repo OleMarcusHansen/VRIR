@@ -6599,7 +6599,7 @@ PrefabInstance:
       objectReference: {fileID: 1011503566}
     - target: {fileID: 2403596436077723580, guid: 2699b202359484e4fa5aa86416c9e8ea, type: 3}
       propertyPath: tasksCorrect.Array.size
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 2403596436077723580, guid: 2699b202359484e4fa5aa86416c9e8ea, type: 3}
       propertyPath: 'tasksCorrect.Array.data[0]'
@@ -6681,6 +6681,10 @@ PrefabInstance:
       propertyPath: 'tasksCorrect.Array.data[19]'
       value: 
       objectReference: {fileID: 879294371}
+    - target: {fileID: 2403596436077723580, guid: 2699b202359484e4fa5aa86416c9e8ea, type: 3}
+      propertyPath: 'tasksCorrect.Array.data[20]'
+      value: 
+      objectReference: {fileID: 1693695800}
     - target: {fileID: 2403596436077723580, guid: 2699b202359484e4fa5aa86416c9e8ea, type: 3}
       propertyPath: scenarioExecutionFlowCorrectPoints.Array.size
       value: 17
