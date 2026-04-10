@@ -8109,8 +8109,8 @@ PrefabInstance:
       objectReference: {fileID: 1245882601}
     - target: {fileID: 6890263389177789840, guid: 9ddf78b92c8cf844db663cb89d53fa95, type: 3}
       propertyPath: taskFailureFeedback
-      value: Database should be saved and leaders should be notified before reverting
-        the database
+      value: Database should be saved and leaders should have been notified before
+        reverting the database
       objectReference: {fileID: 0}
     - target: {fileID: 6890263389177789840, guid: 9ddf78b92c8cf844db663cb89d53fa95, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
