@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8883333161043268863}
   - component: {fileID: 7633382878604306964}
   - component: {fileID: 8433664162162250149}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DatabaseBackup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,6 +255,7 @@ MonoBehaviour:
   taskFailureFeedback: 
   completed: 0
   repeatable: 0
+  nonUserTask: 0
   onTaskPerformed:
     m_PersistentCalls:
       m_Calls: []

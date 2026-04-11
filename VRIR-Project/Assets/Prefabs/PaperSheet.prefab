@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9095102806359971654}
   - component: {fileID: 5179740991082042966}
   - component: {fileID: 4378739001145990517}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PaperSheet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

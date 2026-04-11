@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9013313168497515977}
   - component: {fileID: 2425420436249060972}
   - component: {fileID: 2096661357096258394}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Phone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,9 +70,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a947d40b40885584c97a2a25138d827f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Task
+  taskID: 0
+  prerequisites: 
   taskName: Notify Leaders
+  taskFailureFeedback: 
   completed: 0
   repeatable: 0
+  nonUserTask: 0
   onTaskPerformed:
     m_PersistentCalls:
       m_Calls: []

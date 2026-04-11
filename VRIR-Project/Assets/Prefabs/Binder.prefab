@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 5885641484884431324}
   - component: {fileID: 1346376833773732284}
   - component: {fileID: 9145182535773050502}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Binder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -531,9 +531,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a947d40b40885584c97a2a25138d827f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Task
+  taskID: 0
+  prerequisites: 
   taskName: 
+  taskFailureFeedback: 
   completed: 0
   repeatable: 1
+  nonUserTask: 0
   onTaskPerformed:
     m_PersistentCalls:
       m_Calls: []
