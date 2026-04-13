@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
+using System;
 
 public class ResultsManager : MonoBehaviour
 {
@@ -17,11 +18,15 @@ public class ResultsManager : MonoBehaviour
 
     int score = 0;
     [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] TextMeshProUGUI timeText;
 
-    public void CreateMenu(Task[] correctTasks, Task[] performedTasks)
+    public void CreateMenu(Task[] correctTasks, Task[] performedTasks, float playTime)
     {
         AddTasks(correctTasks, correctTasksParent);
         AddPerformedTasks(correctTasks, performedTasks, performedTasksParent);
+
+        TimeSpan timeSpan = TimeSpan.FromSeconds(playTime);
+        timeText.text = string.Format("Time: {0:00}:{1:00}", timeSpan.Minutes, timeSpan.Seconds);
     }
 
     void AddTasks(Task[] tasks, Transform parent)

@@ -2947,6 +2947,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3570342957160878187, guid: 659e0df93194ea84c8cfa2657f7eb7fb, type: 3}
   m_PrefabInstance: {fileID: 1032475151}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1061459087 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5604067336106500222, guid: 18e6f2b786886144db30b1bf7cda5c71, type: 3}
+  m_PrefabInstance: {fileID: 3128772771079048639}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable
 --- !u!1001 &1062452570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6064,6 +6075,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2096603330 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3340550711492522845, guid: a29dc4b9d85643c4998484b49c9c43af, type: 3}
+  m_PrefabInstance: {fileID: 841046795812378649}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &2144657683 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1803978840025109337, guid: 029ad82e9a449e1449d794a74341bf93, type: 3}
@@ -6291,10 +6313,6 @@ PrefabInstance:
     - target: {fileID: 1294112788861352356, guid: a29dc4b9d85643c4998484b49c9c43af, type: 3}
       propertyPath: m_Name
       value: MenuResults
-      objectReference: {fileID: 0}
-    - target: {fileID: 1294112788861352356, guid: a29dc4b9d85643c4998484b49c9c43af, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3826861369503310589, guid: a29dc4b9d85643c4998484b49c9c43af, type: 3}
       propertyPath: m_Camera
@@ -7273,6 +7291,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1245882601}
     - target: {fileID: 5604067336106500222, guid: 18e6f2b786886144db30b1bf7cda5c71, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604067336106500222, guid: 18e6f2b786886144db30b1bf7cda5c71, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604067336106500222, guid: 18e6f2b786886144db30b1bf7cda5c71, type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1693695799}
@@ -7284,6 +7310,31 @@ PrefabInstance:
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1459193908205227747}
+    - target: {fileID: 5604067336106500222, guid: 18e6f2b786886144db30b1bf7cda5c71, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 1061459087}
+    - target: {fileID: 5604067336106500222, guid: 18e6f2b786886144db30b1bf7cda5c71, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604067336106500222, guid: 18e6f2b786886144db30b1bf7cda5c71, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604067336106500222, guid: 18e6f2b786886144db30b1bf7cda5c71, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable,
+        Unity.XR.Interaction.Toolkit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604067336106500222, guid: 18e6f2b786886144db30b1bf7cda5c71, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5604067336106500222, guid: 18e6f2b786886144db30b1bf7cda5c71, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6889937582454884864, guid: 18e6f2b786886144db30b1bf7cda5c71, type: 3}
       propertyPath: m_Name
       value: DoorInteractable
@@ -8033,6 +8084,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7986998647347678040, guid: c9200a1742a14274bb71b88382684180, type: 3}
+      propertyPath: timeText
+      value: 
+      objectReference: {fileID: 2096603330}
     - target: {fileID: 7986998647347678040, guid: c9200a1742a14274bb71b88382684180, type: 3}
       propertyPath: neutral.a
       value: 1
@@ -9139,7 +9194,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7068282635962521098, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: taskFailureFeedback
-      value: 'Not enforcing 2FA and reseting passwords before logging out users '
+      value: Not enforcing 2FA and reseting passwords before logging out users may
+        allow compromised users to log back in
       objectReference: {fileID: 0}
     - target: {fileID: 7068282635962521098, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: prerequisites.Array.size
@@ -9167,8 +9223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7068282635962521098, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: onTaskPerformed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: All users logged out by system may allow compromised users to log back
-        in
+      value: All users logged out by system
       objectReference: {fileID: 0}
     - target: {fileID: 7310635090745596027, guid: db4a3409d31e58a4eac5ccaf5c5866cd, type: 3}
       propertyPath: m_AnchorMax.y
