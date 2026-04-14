@@ -1979,6 +1979,8 @@ GameObject:
   - component: {fileID: 1522579696403560227}
   - component: {fileID: 4024622231675547872}
   - component: {fileID: 3874872032215139361}
+  - component: {fileID: 8398280159012098019}
+  - component: {fileID: 5994335938478315072}
   m_Layer: 3
   m_Name: IncidentResponsePlanLeaflet
   m_TagString: Untagged
@@ -2102,18 +2104,6 @@ MonoBehaviour:
       - m_Target: {fileID: 3054516158583322036}
         m_TargetAssemblyTypeName: Task, Assembly-CSharp
         m_MethodName: CompleteTask
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ScenarioManager, Assembly-CSharp
-        m_MethodName: StartScenario
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2248,6 +2238,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.21, y: 0.005, z: 0.3}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8398280159012098019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6575819022089981259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e27f3115b5bf4848abe5e85a5844ac4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TooltipHoverProvider
+  tip: Grip to read incident response plan
+--- !u!114 &5994335938478315072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6575819022089981259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a24756e9cff95724a814051fd760eb6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioObject
+  minMagnitude: 2
+  audioCollision: {fileID: 8300000, guid: 13e98435caef40e4e9114d54062ed210, type: 3}
+  audioPickup: {fileID: 8300000, guid: f8d0f0a9ac73d3d43b238d50b37d31c7, type: 3}
 --- !u!1 &6851213110118918128
 GameObject:
   m_ObjectHideFlags: 0
