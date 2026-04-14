@@ -11,7 +11,8 @@ public class AudioObject : MonoBehaviour
     {
         if (audioCollision != null && collision.relativeVelocity.magnitude > minMagnitude)
         {
-            AudioSource.PlayClipAtPoint(audioCollision, transform.position);
+            float volume = (collision.relativeVelocity.magnitude - minMagnitude) / 5;
+            AudioSource.PlayClipAtPoint(audioCollision, transform.position, volume);
         }
     }
 }

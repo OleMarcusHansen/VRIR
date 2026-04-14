@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioObject
   minMagnitude: 0.5
-  audioCollision: {fileID: 8300000, guid: 1659e2c97719a594a8e22156b047f289, type: 3}
+  audioCollision: {fileID: 8300000, guid: 232e260f87bc46048ae301e3a5a35fa6, type: 3}
   audioPickup: {fileID: 0}
 --- !u!1 &7618735348225402977
 GameObject:
