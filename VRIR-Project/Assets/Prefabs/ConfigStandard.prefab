@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2635955771225540706}
   - component: {fileID: 3993867471532192579}
   - component: {fileID: 1324480655805076245}
+  - component: {fileID: 3502941631241296623}
   m_Layer: 3
   m_Name: ConfigStandard
   m_TagString: Untagged
@@ -65,7 +66,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667686627590908011}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -236,6 +237,21 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
+--- !u!114 &3502941631241296623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667686627590908011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a24756e9cff95724a814051fd760eb6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioObject
+  minMagnitude: 0.5
+  audioCollision: {fileID: 8300000, guid: 1659e2c97719a594a8e22156b047f289, type: 3}
+  audioPickup: {fileID: 0}
 --- !u!1 &8148111041897421795
 GameObject:
   m_ObjectHideFlags: 0

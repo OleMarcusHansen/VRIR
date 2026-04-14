@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8883333161043268863}
   - component: {fileID: 7633382878604306964}
   - component: {fileID: 8433664162162250149}
+  - component: {fileID: -6278955454008633929}
   m_Layer: 3
   m_Name: DatabaseBackup
   m_TagString: Untagged
@@ -66,7 +67,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5551739999964798815}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 3
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -259,6 +260,21 @@ MonoBehaviour:
   onTaskPerformed:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-6278955454008633929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5551739999964798815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a24756e9cff95724a814051fd760eb6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioObject
+  minMagnitude: 0.5
+  audioCollision: {fileID: 8300000, guid: 1659e2c97719a594a8e22156b047f289, type: 3}
+  audioPickup: {fileID: 0}
 --- !u!1 &7618735348225402977
 GameObject:
   m_ObjectHideFlags: 0

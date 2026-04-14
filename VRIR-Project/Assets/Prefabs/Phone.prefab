@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2425420436249060972}
   - component: {fileID: 2096661357096258394}
   - component: {fileID: 5345096229514966828}
+  - component: {fileID: 8637786035669357064}
   m_Layer: 3
   m_Name: Phone
   m_TagString: Untagged
@@ -358,6 +359,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8637786035669357064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803978840025109337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a24756e9cff95724a814051fd760eb6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioObject
+  minMagnitude: 0.5
+  audioCollision: {fileID: 8300000, guid: 1659e2c97719a594a8e22156b047f289, type: 3}
+  audioPickup: {fileID: 0}
 --- !u!1 &5159867073976574906
 GameObject:
   m_ObjectHideFlags: 0
