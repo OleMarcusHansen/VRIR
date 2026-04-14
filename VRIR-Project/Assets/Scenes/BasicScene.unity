@@ -530,7 +530,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 49f579f0d8c65a947a503f76d360e918, type: 2}
+  - {fileID: 2100000, guid: 3f787751ee418d14296989a97cd885c9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1488,7 +1488,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 49f579f0d8c65a947a503f76d360e918, type: 2}
+  - {fileID: 2100000, guid: 3f787751ee418d14296989a97cd885c9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2008,7 +2008,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 49f579f0d8c65a947a503f76d360e918, type: 2}
+  - {fileID: 2100000, guid: 3f787751ee418d14296989a97cd885c9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3365,7 +3365,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 49f579f0d8c65a947a503f76d360e918, type: 2}
+  - {fileID: 2100000, guid: 3f787751ee418d14296989a97cd885c9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5537,7 +5537,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 49f579f0d8c65a947a503f76d360e918, type: 2}
+  - {fileID: 2100000, guid: 3f787751ee418d14296989a97cd885c9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7639,6 +7639,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 333237003444665061, guid: cbaf588dc62767245b53b685e05c67f1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 49f579f0d8c65a947a503f76d360e918, type: 2}
     - target: {fileID: 388476525701733036, guid: cbaf588dc62767245b53b685e05c67f1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -7707,6 +7711,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7069853581377308140, guid: cbaf588dc62767245b53b685e05c67f1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3f787751ee418d14296989a97cd885c9, type: 2}
     - target: {fileID: 7423581319004464150, guid: cbaf588dc62767245b53b685e05c67f1, type: 3}
       propertyPath: m_Name
       value: Door
