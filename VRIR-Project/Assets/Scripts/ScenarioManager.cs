@@ -19,8 +19,6 @@ public class ScenarioManager : MonoBehaviour
 
     [SerializeField] ResultsManager resultsManager;
 
-    [SerializeField] int score = 0;
-
     [SerializeField] Task userWarningsTask;
     [SerializeField] Task systemWarningsTask;
     [SerializeField] Task databaseWarningsTask;
