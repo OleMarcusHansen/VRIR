@@ -1,7 +1,8 @@
-using UnityEngine;
-using System.Collections.Generic;
-using TMPro;
 using System;
+using System.Collections.Generic;
+using System.Security.Cryptography;
+using TMPro;
+using UnityEngine;
 
 public class ResultsManager : MonoBehaviour
 {
@@ -100,6 +101,29 @@ public class ResultsManager : MonoBehaviour
             }
 
             IDs.Add(task.taskID);
+        }
+
+        foreach(Task task in correctTasks)
+        {
+            if (!IDs.Contains(task.taskID) && !task.nonUserTask)
+            {
+                bool b = true;
+                foreach (int id in task.prerequisites)
+                {
+                    if (!IDs.Contains(id))
+                    {
+                        b = false;
+                    }
+                }
+                if (b)
+                {
+                    ResultTask feedbackText = Instantiate(resultFeedbackPrefab, feedbackParent).GetComponent<ResultTask>();
+                    feedbackText.Setup(task.taskName + " was not performed", negative);
+                    addedFeedback.Add(task.taskName + " was not performed");
+                }
+
+                
+            }
         }
 
         scoreText.text = "Score: " + score + " / " + MaxScore(correctTasks);
